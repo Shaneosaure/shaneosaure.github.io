@@ -88,6 +88,7 @@ li:last-child {
 /* Responsive */
 @media screen and (max-width: 600px) {
     ul.nav li.right, ul.nav li a{float: none; border-bottom: 1px solid #bbb; };   
+    html { font-size: 11px;}
 }
 
 /***************FIN Menu Navigation***************/
