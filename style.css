@@ -8,7 +8,7 @@ body {
     background: cyan;
     text-align: center;
 } 
-img {
+.responsive {
     height: auto;
     max-width: 100% ;
 }
