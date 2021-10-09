@@ -1,0 +1,155 @@
+html { 
+    font-size: 18px; 
+}
+body {
+    margin: 0; /* Remplir la largeur du body*/
+    background-color:cyan;
+} 
+
+footer {
+    text-align: center;
+    padding: 3px;
+    color: white;
+    bottom: 0;
+}
+
+section {
+    padding-left: 5px;
+}
+
+/***************Menu Navigation***************/
+/* Paramètres class du menu navigation */
+ul.nav {
+    list-style-type: none;  /* pour enlever les puces*/ 
+    margin: 0;
+    margin-bottom: -20px;
+    padding: 0;
+    overflow: hidden;
+    background: rgb(18,38,162);
+    background: linear-gradient(90deg, rgba(18,38,162,1) 0%, rgba(5,120,240,1) 47%, rgba(0,255,255,1) 95%);  
+    width: 100%;
+}
+
+li a {
+    display: block; 
+    color: white; 
+    text-align: center;
+    padding: 1%;
+    text-decoration: none; /* pour enlever le format hypertext*/ 
+    float: left ;   /* justifie à gauche */ 
+    border-right: 1px solid #bbb;
+}
+
+li a:hover{
+    background-color: #111;
+}
+
+li:last-child {
+    border-right: none;
+    border-bottom: none;
+}
+
+/* Responsive */
+@media screen and (max-width: 600px) {
+    ul.nav  li a{float: none; border-bottom: 1px solid #bbb; }
+}
+/***************FIN Menu Navigation***************/
+
+/* Titre 1 centré*/
+section > h1 {
+    text-align: center;
+}
+
+/*Petite paragraphe definition*/
+section >p{
+    text-align: justify;    /* justifie le text*/
+    width: 60%;             /*largeur du paragraph */           
+    margin:auto ;           /* positonnement dans la page*/
+    border: 5px double black;   /*contour du paragraph*/
+    padding: 5px;                 /*distance text contour*/  
+}
+
+
+/*********************** Diaporama Photos ***********************/
+/* Le code qui suit a été pris sur https://www.guyom-design.com/blog/astuces/css/tuto_diapo_css/#! 
+   J'ai essayé de l'adapter le mieux possible à ma page en supprimant des variables inutiles
+   et en le commentant pour bien expliquer son fonctionnement.
+
+   Le diaporama d'image se base sur un input radio qui contient des images comme label
+   et les affiches en changeant leur opacité et position.
+*/
+
+img{
+    max-width:100%;
+}
+
+/* Ceci permet de cacher les petit ronds des inputs */
+input[type=radio] 
+{
+    position:absolute;
+    left:-9999px;
+}
+
+/* Permet d'afficher une petite main à la place de la sourie sur les images du bas*/
+.cadre-demo1 label{
+    cursor:pointer
+}
+
+/* Creation d'une classe contenant l'image mise avant et les miniature*/
+.cadre-demo1{
+    overflow: hidden;
+    position: relative;
+    max-width: 600px; /*Permet de limiter la taille du cadre*/
+    margin: 2rem auto;
+}
+
+/*Images situé au bas de l'image principale*/
+.photos-mini{
+    padding-top: 66.67%;
+    display:flex;
+}
+
+/*Permet de rajouter un espacement entre les images de classe photos-mini */
+.miniature{
+    flex: 1;
+    padding:.25rem;
+}
+
+/* Image affichée au centre */
+.fenetre{
+    object-fit: cover;
+    position:absolute;
+    top:0;
+    transition:all .6s; /*Effet de changement image*/
+    left:-100%; /* Positionne l'image hors cadre*/
+    opacity:0;  /* Mise en invisible en attendant d'être selectionné*/
+}
+
+.fen:checked~ .fenetre{
+    left:0%;    /*Amène l'image hors cadre au centre*/
+    opacity:1;  /* Affiche l'image selectionné dpar le input*/
+}
+
+/* Il s'agit du text figurant dans l'angle gauche*/
+figcaption{
+    text-align:center; 
+    /* position de la boite text */
+    position:absolute;
+    top:0px;
+    left:0;
+    /*****************************/
+
+    padding:.25rem;
+    transition:.6s; 
+    opacity:0;      /*Met en invisible tant que l'image n'est pas choisi*/
+    display:flex;   /* reponsiveness */
+    color:white;
+    background:hsla(0,0%,0%,.8);
+}
+
+/* Affiche le texte de l'image choisi*/
+.fen:checked~figcaption{
+    transition:2s; /* ajoute un effet d'affichage */
+    opacity:1;  /*enlève l'invisibilité */ 
+}
+/*********************** FIN Diaporama Photos ***********************/

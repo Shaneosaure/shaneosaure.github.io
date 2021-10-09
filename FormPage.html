@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">   <!-- Nécessaire pour les accents -->
+    <meta name="author" content="Stéphane S.">   <!-- Ma signature -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Nécessaire pour la responsiveness -->
+    <meta name="keyords" content="Contact">     
+    <meta name="description" content="Contact me page">
+    <link rel="stylesheet" type="text/css" href="style.css"> <!-- Chemin vers mon fichier css -->
+    <title>Contactez Moi</title>
+</head>
+<body>
+    <nav> 
+        <!-- Bar navigation, une liste de liens -->
+        <ul class="nav"> 
+            <li><a href="index.html">Acceuil</a></li>
+            <li><a href="GaleryPage.html">Galerie</a></li>
+            <li><a href="FormPage.html">Contact</a></li>
+            <li><a href="ListePage.html">A propos</a></li>
+        </ul> 
+    </nav>
+    <section>
+        <h1>Petites questions avant d'avoir mes coordonnées...</h1>
+        <form>
+            <!-- Utilisation du input texte -->
+            <div>
+                <label for="fname">Prénom :</label>
+                <input type="text" id="fname" placeholder="Jean" name="fname">
+            </div>
+            <div>
+                <label for="lname">Nom :</label>
+                <input type ="text" id="lname" placeholder="DUPONT" name="lname">
+             </div>
+
+            <!-- Utilisation du input Radio -->
+            <div>
+                <label for="radio">Aimez-vous le groupe de musique Gorillaz ?</label>
+                <div>
+                    <input type ="radio" id="oui" name="good_music" value="OUI" >
+                    <label for="oui">OUI</label>
+                </div>
+                <div>    
+                    <input type ="radio" id="non" name="good_music" value="NON" >
+                    <label for="non">NON</label>
+                </div>
+            </div>
+
+            <!-- Utilisation du input Checkbox -->
+            <div>
+                <label for="checkbox">Quels sont vos groupes favoris ?</label>
+                <div>
+                    <input type ="checkbox" id="fav_music1" name="fav_music1" value="Nirvana" >
+                    <label for="fav_music1">Nirvana</label>
+                </div>
+                <div>
+                    <input type ="checkbox" id="fav_music2" name="fav_music2" value="Måneskin" >
+                    <label for="fav_music2">Måneskin</label>
+                </div>
+                <div>
+                    <input type ="checkbox" id="fav_music3" name="fav_music3" value="Led Zeppelin" >
+                    <label for="fav_music3">Led Zeppelin</label>
+                </div>
+                <div>
+                    <input type ="checkbox" id="fav_music4" name="fav_music4" value="AC/DC" >
+                    <label for="fav_music4">AC/DC</label>
+                </div>    
+            </div>
+            <!-- Utilisation du input Color -->
+            <div>
+                <label for="fav_color">Selectionner votre couleur favorite : </label>
+                <input type="color" id="fav_color" name="fvcolor">
+            </div>
+            <!-- Utilisation du input Number -->
+            <div>
+                <label for="fav_num">Nombre préféré :</label>
+                <input type="number" id="fav_num" name="fav_num" min="1" max="420"> 
+            </div> 
+            <div>
+                <label for="date_auj">Date d'aujourd'hui :</label>
+                <input type="date" id="date_auj" name="Aujourd'hui">
+            </div>
+            <div>
+                <label for="num_tel">Votre numéro de téléphone :</label>
+                <input type="tel" id="num_tel" placeholder="+33 6 12 34 56 78" name="Téléphone" pattern="{+33 6}[0-9][0-9][0-9][0-9]">       
+            </div>
+            <div>
+                <label for="heure">Quelle heure est-il ?</label>
+                <input type="time" id="heure" name="Heure">
+            </div>
+            <div>
+                <label for="Hidden">Ecrivez un mot que vous ne voulez pas que je lise :</label>
+                    <div>
+                        <input type="password" id="Hidden" name="Hidden">
+                    </div>
+            </div>
+            <div>
+                <input type="button" onclick="alert('Félicitations !\nVoici mon adresse mail: ssimon.ing2024@esaip.org',  
+                alert('Merci d\'avoir répondu'), 
+                alert('Analyse.....'), 
+                alert('└[∵┌]└[ ∵ ]┘[┐∵]┘\n         BIP BOP \n└[∵┌]└[ ∵ ]┘[┐∵]┘') , 
+                alert('Toutes les réponses sont correctes !') );" value="Envoyer">
+                <input type="reset">
+            </div>
+        </form> 
+    </section>
+    <footer>
+        <p>Auteur: Stéphane SIMON<p>
+    </footer> 
+</body>
+</html> 

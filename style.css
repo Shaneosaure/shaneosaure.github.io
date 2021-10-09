@@ -1,0 +1,98 @@
+html { 
+    font-size: 18px; 
+    
+}
+
+body {
+    margin: 0; /* Remplir la largeur du body*/
+    background: cyan;
+    text-align: center;
+} 
+
+footer {
+    text-align: center;
+    padding: 3px;
+    color: white;
+    bottom: 0;
+}
+
+form {
+    display: inline-block;
+}
+
+section {
+    padding-left: 5px;
+}
+
+form > div > div , form > div {
+    padding: 5px;
+    text-align: left;
+}
+
+table{
+    margin: auto;
+    border-collapse: collapse;
+    width: 60%;
+}
+
+
+td, th {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+td.first{
+    background-color : cornsilk;
+}
+
+tr:nth-child(odd) {
+    background-color: cornsilk;
+}
+
+tr:nth-child(even) {
+    background-color: white;
+}
+
+/***************Menu Navigation***************/
+/* Paramètres class du menu navigation */
+ul.nav {
+    list-style-type: none;  /* pour enlever les puces*/ 
+    margin: 0;
+    margin-bottom: -20px;
+    padding: 0;
+    overflow: hidden;
+    background: rgb(18,38,162);
+    background: linear-gradient(90deg, rgba(18,38,162,1) 0%, rgba(5,120,240,1) 47%, rgba(0,255,255,1) 95%);  
+    width: 100%;
+}
+
+li a {
+    display: block; 
+    color: white; 
+    padding: 1%;
+    text-decoration: none; /* pour enlever le format hypertext*/ 
+    float: left ;   /* justifie à gauche */ 
+    border-right: 1px solid #bbb;
+}
+
+li a:hover{
+    background-color: #111;
+}
+
+li:last-child {
+    border-right: none;
+    border-bottom: none;
+}
+
+/* Responsive */
+@media screen and (max-width: 600px) {
+    ul.nav li.right, ul.nav li a{float: none; border-bottom: 1px solid #bbb; };   
+}
+
+/***************FIN Menu Navigation***************/
+
+
+
+
+
