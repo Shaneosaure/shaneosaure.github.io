@@ -8,6 +8,9 @@ body {
     background: cyan;
     text-align: center;
 } 
+img {
+    width: 100%;
+}
 
 footer {
     text-align: center;
