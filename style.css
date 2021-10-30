@@ -1,6 +1,6 @@
+
 html { 
-    font-size: 18px; 
-    
+    font-size: 18px;    /* Défini la taille de police sur toute la page */
 }
 
 body {
@@ -8,10 +8,6 @@ body {
     background: cyan;
     text-align: center;
 } 
-.responsive {
-    height: auto;
-    max-width: 100% ;
-}
 
 footer {
     text-align: center;
@@ -20,6 +16,7 @@ footer {
     bottom: 0;
 }
 
+/***************Forms page Contact***************/
 form {
     display: inline-block;
 }
@@ -32,13 +29,14 @@ form > div > div , form > div {
     padding: 5px;
     text-align: left;
 }
+/***************FIN Forms page Contact***************/
 
+/***************Tableau page A propos***************/
 table{
     margin: auto;
     border-collapse: collapse;
     width: 60%;
 }
-
 
 td, th {
     border: 1px solid black;
@@ -46,16 +44,61 @@ td, th {
     text-align: center;
 }
 
+/* Couleur arrière plan de la première colonne */
 td.first{
     background-color : cornsilk;
 }
 
+/* Couleur arrière plan des lignes impaires */
 tr:nth-child(odd) {
     background-color: cornsilk;
 }
 
+/* Couleur arrière plan des lignes paires */
 tr:nth-child(even) {
     background-color: white;
+}
+/***************FIN Tableau page A propos***************/
+
+header > h1{
+    font-size: 40px;
+    color: rgb(14, 51, 119);
+    text-align: center;
+    font-family: cursive;
+}
+
+/***************Articles page Acceuil***************/
+article {
+    margin-top: 25px;
+    padding: 5px;
+    background-color: rgb(12, 225, 236);
+}
+  
+article > h1, article > article {
+    margin: 10px;
+    padding: 5px;
+}
+
+/* Couleur arrière plan des blocs d'articles dans articles */
+article > article {
+    background: white;
+}
+
+/* Réduit la taille d'écriture des articles*/
+article > article > h2, p {
+    margin: 4px;
+    font-size: 90%;
+}
+
+/* Justifie le texte des paragraphes (surtout des articles) */
+p{
+    text-align: justify;
+}
+/***************FIN Articles page Acceuil***************/
+
+/* Centre uniquement le text en pied de page */
+footer > p {
+    text-align: center;
 }
 
 /***************Menu Navigation***************/
