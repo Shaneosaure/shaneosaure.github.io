@@ -1,4 +1,9 @@
-### Hi there 👋
+### Hello ! 
+Juste pour vous dire que ce projet de developpement web était passionant.
+Certes je n'ai pas développé une passion pour le css mais cela m'a permit de mieux comprendre le fonctionnement des sites web en général.
+Par ailleurs, ce site web est également disponible en ligne sur github.
+En voici le lien : https://shaneosaure.github.io
+Bonne continuation.
 
 <!--
 **Shaneosaure/Shaneosaure** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
