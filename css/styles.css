@@ -19,6 +19,9 @@ body.active {
     overflow: hidden;
     z-index: -1;
 }
+p {
+    text-align: justify;
+}
 .no-js #experience-timeline > div {
     background: #fff;
     padding: 10px;
