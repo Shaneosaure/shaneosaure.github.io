@@ -705,6 +705,9 @@ footer {
     padding: 0 0 0 15px;
 }
 @media only screen and (max-width: 750px) {
+    p {
+        text-align: justify;
+    }
     #experience-timeline:before,
     #experience-timeline:after {
         left: 23px;
@@ -725,6 +728,9 @@ footer {
     }
 }
 @media only screen and (max-width: 992px) {
+    p {
+        text-align: justify;
+    }
     #lead {
         height: auto;
         min-height: auto;
@@ -751,6 +757,9 @@ footer {
     }
 }
 @media only screen and (max-width: 768px) {
+    p {
+        text-align: justify;
+    }
     header {
         position: fixed;
         display: none;
@@ -818,6 +827,9 @@ footer {
     }
 }
 @media only screen and (max-width: 480px) {
+    p {
+        text-align: justify;
+    }
     #lead-content h1 {
         font-size: 1.5em;
     }
