@@ -33,6 +33,6 @@
     "glob-stream": "^7.0.0",
     "glob-parent": "^6.0.0",
     "micromatch": "^4.0.0",
-    "semver": "^6.3.1"
+    "semver": "^7.0.0"
   }
 }
