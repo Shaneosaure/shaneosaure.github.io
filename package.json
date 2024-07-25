@@ -27,7 +27,7 @@
     "gulp-sass": "^5.1.0",
     "gulp-uglify": "^3.0.2",
     "gulp-wait": "0.0.2",
-    "semver": "^7.6.2"
+    "semver": "^7.6.3"
   },
   "overrides": {
     "chokidar": "^3.0.0",
